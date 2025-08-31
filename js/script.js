@@ -10,7 +10,7 @@ var passwordNoErr=document.getElementById('password-NoErr');
 userName.addEventListener('input', function (e) {
 
     var regex = /^[\w]{8}$/;
-    var currentValue = e.target.value;
+    var Value = e.target.value;
 
     var isvalid = regex.test(currentValue);
 
@@ -30,14 +30,14 @@ password.addEventListener('input', function (e) {
     var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8}$/;
     var value = e.target.value;
 
-   var isValid = regex.test(value);
+   var isValid = regex.test(currentValue);
 
     if (isValid) {
-        errorElement.style.display = 'none';
-        successElement.style.display = 'block';
+        passwordErr.style.display = 'none';
+        passwordNoErr.style.display = 'block';
     }
     else{
-        errorElement.style.display = 'block';
-        successElement.style.display = 'none';
+        passwordErr.style.display = 'block';
+        passwordNoErr.style.display = 'none';
     }
 });

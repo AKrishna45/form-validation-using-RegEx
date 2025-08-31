@@ -67,6 +67,37 @@ body {
     padding: 0 10px;
     display: none;
 }
+#username-NoErr{
+    color: green;
+    font-size: 16px;
+    letter-spacing: 1;
+    margin: 10px 0;
+    padding: 0 10px;
+    display: none;
+}
+
+.login-container #condition{
+    font-size: 16px;
+    font-weight: 100;
+    color: #464545;
+    padding: 0 10px;
+}
+#password-err{
+    color: red;
+    font-size: 16px;
+    letter-spacing: 1;
+    margin: 10px 0;
+    padding: 0 10px;
+    display: none;
+}
+#password-NoErr{
+    color: green;
+    font-size: 16px;
+    letter-spacing: 1;
+    margin: 10px 0;
+    padding: 0 10px;
+    display: none;
+}
 @media (max-width: 480px) {
     .login-container {
         padding: 20px 15px;
