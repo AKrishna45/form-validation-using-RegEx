@@ -10,9 +10,9 @@ var passwordNoErr=document.getElementById('password-NoErr');
 userName.addEventListener('input', function (e) {
 
     var regex = /^[\w]{8}$/;
-    var Value = e.target.value;
+    var currentvalue = e.target.value;
 
-    var isvalid = regex.test(currentValue);
+    var isvalid = regex.test(currentvalue);
 
     if (isvalid) {
         userNameErr.style.display = 'none';
@@ -28,9 +28,9 @@ userName.addEventListener('input', function (e) {
 password.addEventListener('input', function (e) {
     
     var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8}$/;
-    var value = e.target.value;
+    var currentvalue = e.target.value;
 
-   var isValid = regex.test(currentValue);
+   var isValid = regex.test(currentvalue);
 
     if (isValid) {
         passwordErr.style.display = 'none';
